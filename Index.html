@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portfolio - Muthukumar </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    header img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ffeb3b;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    header img.profile-pic:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      animation: fadeInDown 1.5s;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 8px;
+      animation: fadeInUp 2s;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 50px 60px;
+    }
+
+    section {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 3px solid #ff4081;
+      font-size: 1.6rem;
+      color: #222;
+      text-shadow: 1px 1px #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 30px;
+      grid-column: span 2;
+    }
+
+    .contact a {
+      color: #ffeb3b;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #fff;
+    }
+
+    /* 🔥 Responsive Design */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      header img.profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Replace 'your-photo.jpg' with your actual photo file -->
+    <img src="img203641.jpg" alt="Muthu Kumar" class="profile-pic">
+    </h1> MUTHU KUMAR</h1>
+    <p>🚀 Student | Tech Explorer | Future Developer</p>
+  </header>
+
+  <div class="grid-container">
+    <section class="about">
+      <h2>✨ About Me</h2>
+      <p>
+        I am a passionate Computer Science student who loves exploring programming,
+        web development, and technology. I enjoy solving problems, experimenting with
+        code, and learning new skills every day.
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li>B.Sc Computer Science – XYZ College (2023 - 2026)</li>
+        <li>Higher Secondary – ABC School (2021 - 2023)</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>🛠 Skills</h2>
+      <ul>
+        <li>Programming Languages: Java, Python, C</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Problem Solving & Algorithms</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>📂 Projects</h2>
+      <ul>
+        <li>Student Management System (Java + MySQL)</li>
+        <li>Personal Portfolio Website (HTML + CSS)</li>
+        <li>Data Analysis on Student Performance (Python)</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>📞 Contact Me</h2>
+      <p>Email: <a href="mailto:muthu@example.com</a></p>
+      <p>Phone1 9876543210</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/david</a></p>
+    </section>
+  </div>
+
+</body>
+</html>
